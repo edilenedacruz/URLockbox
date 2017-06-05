@@ -2,7 +2,7 @@ class LinksController < ApplicationController
   before_action :require_login
 
   def index
-    @links = Link.all
+    @links = current_user.links.order(id: :desc)
   end
 
 
@@ -13,7 +13,7 @@ class LinksController < ApplicationController
       flash[:success] = "A new link has been added."
       redirect_to links_path
     else
-      flash[:error] = @link.errors.full_messages.to_sentence
+      flash[:danger] = @link.errors.full_messages.to_sentence
       render :edit
     end
   end
@@ -29,7 +29,7 @@ class LinksController < ApplicationController
       flash[:success] = "The link has been updated."
       redirect_to links_path
     else
-      flash[:error] = @link.errors.full_messages.to_sentence
+      flash[:danger] = @link.errors.full_messages.to_sentence
       render :edit
     end
   end

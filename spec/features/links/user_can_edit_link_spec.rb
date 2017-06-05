@@ -10,7 +10,7 @@ RSpec.feature "Links" do
     visit links_path
 
     expect(page).to have_content("Title: Turing")
-    within(".id-turing") do
+    within("##{link_1.id}") do
       click_link "Edit"
     end
 
@@ -31,7 +31,7 @@ RSpec.feature "Links" do
 
     visit links_path
 
-    within(".id-turing") do
+    within("##{link_1.id}") do
       click_link "Edit"
     end
 
@@ -50,7 +50,7 @@ RSpec.feature "Links" do
 
     visit links_path
 
-    within(".id-turing") do
+    within("##{link_1.id}") do
       click_link "Edit"
     end
 
