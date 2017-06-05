@@ -33,7 +33,7 @@ function printLinks(data) {
         </div>
         `;
     $(`#${link.id}`).append(markUnread);
-    $(`#${link.id}`).addClass("alert alert-danger");
+    $(`#${link.id}`).addClass("alert alert-warning");
   } else {
     var markRead = `
     <div>
@@ -44,7 +44,7 @@ function printLinks(data) {
     </div>
     `;
   $(`#${link.id}`).append(markRead);
-  $(`#${link.id}`).addClass("alert alert-info");
+  $(`#${link.id}`).addClass("alert alert-success");
   }
 });
 }

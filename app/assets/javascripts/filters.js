@@ -13,7 +13,9 @@ function filterUrl() {
       var searchValue = $('#filter').val().toLowerCase();
 
       if (cardTitle.includes(searchValue) || cardUrl.includes(searchValue)) {
-      debugger
+        $(link).show();
+      } else {
+        $(link).hide();
       }
     });
   });
