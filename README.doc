@@ -5,6 +5,10 @@ URLockbox is a small Rails application where an user can create an account and s
 
 URLockbox works beautifully on its own but it also works seamlessly with the Rails app [Hot Reads](https://github.com/edilenedacruz/hot_reads). Hot Reads will display the most popular/accessed links from URLockbox users by making API calls.
 
+###Production site
+
+https://damp-journey-77886.herokuapp.com/
+
 ###Set up
 
 If you would like to use this application locally, please follow the instructions below:
