@@ -52,7 +52,7 @@ function printLinks(data) {
 
 function findHotUrls(){
   $.ajax({
-    url: 'https://frozen-mesa-43893.herokuapp.com/api/v1/links'
+    url: 'https://hot-reads-g.herokuapp.com/api/v1/links',
     // url: 'http://localhost:3001/api/v1/links',
     method: 'GET'
   }).then((data) => addHotLinks(data))
