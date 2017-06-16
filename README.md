@@ -34,11 +34,11 @@ $ rake db:create
 $ rake db:migrate
 ```
 
-6. As the master has the production links to the work with the Hot Reads app, please visit the following files and comment out the production url links and then uncomment the localhost links.
+6. As the master has the production links to the work with the Hot Reads app, please visit the following files and comment out the production url links ```https://hot-reads-g.herokuapp.com/api/v1/links``` and then uncomment the localhost links ```http://localhost:3001/api/v1/links```.
 
 ```
-$ cd app/javascripts/links.js.es6
-$ cd app/javascripts/sendToHotReads.js.es6
+$ app/javascripts/links.js.es6
+$ app/javascripts/sendToHotReads.js.es6
 ```
 
 7. Start up local server

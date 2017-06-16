@@ -40,16 +40,12 @@ function postLink(link) {
       </div>
     </div>`
   );
+  $('#add-url').val("");
+  $('#add-title').val("");
 }
 
 function printError(error){
-  // debugger
-    $('.errors').append(`<div class="alert alert-danger" role="alert">
-        <h5>${error}</h5>
-      </div>`).delay(3200).fadeOut(300);
-  // error.forEach(function(error) {
-  //   $('.errors').append(`<div class="alert alert-danger" role="alert">
-  //       <h5>${error}</h5>
-  //     </div>`)
-  // })
+  $('.errors').append(`<div class="alert alert-danger" role="alert">
+      <h5>${error}</h5>
+    </div>`).delay(3200).fadeOut(300);
 }
