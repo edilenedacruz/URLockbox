@@ -12,7 +12,7 @@ function sendToHotReads(e) {
     // url: 'http://localhost:3001/api/v1/links',
     method: 'POST',
     data: hot
-  }).then((data))
+  }).then(addHotLinks)
     .fail((error) => {
     console.log(error);
   });

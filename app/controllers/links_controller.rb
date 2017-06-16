@@ -11,10 +11,9 @@ class LinksController < ApplicationController
     @link = @user.links.create(link_params)
     if @link.save
       flash[:success] = "A new link has been added."
-      redirect_to links_path
+      render json: @link
     else
-      flash[:danger] = @link.errors.full_messages.to_sentence
-      render :edit
+      render json: @link.errors.full_messages
     end
   end
 
