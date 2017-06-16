@@ -52,8 +52,8 @@ function printLinks(data) {
 
 function findHotUrls(){
   $.ajax({
-    url: 'https://hot-reads-g.herokuapp.com/api/v1/links',
-    // url: 'http://localhost:3001/api/v1/links',
+    // url: 'https://hot-reads-g.herokuapp.com/api/v1/links',
+    url: 'http://localhost:3001/api/v1/links',
     method: 'GET'
   }).then((data) => addHotLinks(data))
     .fail(displayError);
