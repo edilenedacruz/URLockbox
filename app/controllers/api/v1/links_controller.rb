@@ -1,7 +1,7 @@
 class Api::V1::LinksController < ApplicationController
   def index
     @links = current_user.links
-    render json: @links
+    render json: @links.order(created_at: :desc)
   end
 
 

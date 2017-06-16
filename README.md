@@ -37,7 +37,8 @@ $ rake db:migrate
 6. As the master has the production links to the work with the Hot Reads app, please visit the following files and comment out the production url links and then uncomment the localhost links.
 
 ```
-$ cd/
+$ cd app/javascripts/links.js.es6
+$ cd app/javascripts/sendToHotReads.js.es6
 ```
 
 7. Start up local server

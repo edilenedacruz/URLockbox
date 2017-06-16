@@ -9,7 +9,7 @@ function sendToHotReads(e) {
 
   $.ajax({
     // url: 'https://hot-reads-g.herokuapp.com/api/v1/links',
-    url: 'http://localhost:3001/api/v1/links',
+    url: 'http://localhost:3001/api/v1/links',  
     method: 'POST',
     data: hot
   }).then(addHotLinks)

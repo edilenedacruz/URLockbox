@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Links" do
+RSpec.feature "Links", js: true do
   xit "user receives error if link is invalid" do
     user = create(:user, email_address: "me@email.com")
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
