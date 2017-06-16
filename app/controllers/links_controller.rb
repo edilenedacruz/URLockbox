@@ -25,7 +25,7 @@ class LinksController < ApplicationController
     @link = Link.find(params[:id])
     @link.update_attributes(link_params)
     if @link.save
-      flash.now[:success] = "The link has been updated."
+      flash[:success] = "The link has been updated."
       redirect_to links_path
     else
       flash[:danger] = @link.errors.full_messages.to_sentence
