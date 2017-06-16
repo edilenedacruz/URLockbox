@@ -10,8 +10,7 @@ function markAsUnread(e) {
     type: "PATCH",
     url: "/api/v1/links/" + linkId,
     data: { read: false },
-  }).then(location.reload())
-    .then(updateLinkStatus)
+  }).then(updateLinkStatus)
     .fail(displayFailure);
 }
 
