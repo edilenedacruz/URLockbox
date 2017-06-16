@@ -26,7 +26,7 @@ function printLinks(data) {
   $('#links-list .row').prepend(linkRow);
   if (link.read === true){
       let markUnread = `
-        <div>
+        <div class="button">
           <button class="mark-as-unread btn btn-default" data-id="${link.id}">Mark as Unread</button>
           <form action="/links/${link.id}/edit" method="GET">
             <input type="submit" value="Edit" class="btn btn-default" />
@@ -37,7 +37,7 @@ function printLinks(data) {
     $(`#${link.id}`).addClass("alert alert-warning");
   } else {
     var markRead = `
-    <div>
+    <div class="button">
       <button class="mark-as-read hot-read btn btn-default" data-id="${link.id}" data-url="${link.url}" >Mark as Read</button>
       <form action="/links/${link.id}/edit" method="GET">
         <input type="submit" value="Edit" class="btn btn-default"/>
