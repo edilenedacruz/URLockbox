@@ -15,7 +15,7 @@ If you would like to use this application locally, please follow the instruction
 
 1. Clone down the repo
 ```
-https://github.com/edilenedacruz/m4-final-starter.git
+https://github.com/edilenedacruz/URLockbox.git
 ```
 2. Select folder
 ```
