@@ -19,7 +19,7 @@ https://github.com/edilenedacruz/URLockbox.git
 ```
 2. Select folder
 ```
-$ cd /m4-final-starter
+$ cd /URLockbox
 ```
 3. Install required gems
 ```
